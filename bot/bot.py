@@ -1,5 +1,3 @@
-import time
-
 import telebot
 
 from API_KEYS.get_key import get_key
@@ -40,4 +38,3 @@ def weather_message(message: telebot.types.Message) -> None:
 
     add_users_to_log(message.from_user.username, message.text)
 
-    time.sleep(5)
