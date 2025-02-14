@@ -1,0 +1,8 @@
+.vevn/
+.idea/
+__pycache__
+
+/API_KEYS/BOT_KEY.txt
+/API_KEYS/test_bot_key.txt
+/API_KEYS/WEATHER_KEY.txt
+/users/log_users.txt
