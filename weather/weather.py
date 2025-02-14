@@ -56,5 +56,3 @@ class Weather:
                              f"Ветер {self._get_wind_direction(self.response['wind']['deg'])}, {self.response['wind']['speed']:.1f} м\с.")
 
         return self.last_weather
-
-

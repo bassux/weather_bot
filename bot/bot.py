@@ -5,7 +5,6 @@ from weather.weather import Weather
 from thrds.threads import new_thread
 from users.users_log import add_users_to_log
 
-
 bot = telebot.TeleBot(get_key('test_bot_key.txt'))
 weather = Weather()
 
@@ -24,7 +23,6 @@ def start(message: telebot.types.Message) -> None:
     add_users_to_log(message.from_user.username, 'start/help')
 
 
-
 @bot.message_handler()
 @new_thread
 def weather_message(message: telebot.types.Message) -> None:
@@ -37,4 +35,3 @@ def weather_message(message: telebot.types.Message) -> None:
     bot.send_message(message.from_user.id, weather.last_weather)
 
     add_users_to_log(message.from_user.username, message.text)
-
